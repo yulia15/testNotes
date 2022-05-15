@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="title">Название</string>
+    <string name="text_note">Текст</string>
+    <string name="appTitle">Заметки</string>
+    <string name="update_menu">редактировать</string>
+    <string name="del_menu">удалить</string>
+</resources>
