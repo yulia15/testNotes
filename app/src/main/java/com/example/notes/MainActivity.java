@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1) {
+            //recreate();
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             finish();
@@ -68,6 +69,16 @@ public class MainActivity extends AppCompatActivity {
                 listTitleNote.add(cursor.getString(1));
                 listTextNote.add(cursor.getString(2));
             }
+
         }
+    }
+
+
+   @Override
+    protected void onRestart() {
+        super.onRestart();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
